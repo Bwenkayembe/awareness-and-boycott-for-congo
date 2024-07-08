@@ -9,7 +9,7 @@ const Quote = () => {
             I missed out on a lot of subjects. Because my friends were going to school, and I was working.
             Those who were at the same level as me when I started mining, completely passed me by. 
             That's what I regret.”</p>
-        <p className="author">- Faustin, 16, former child miner</p>
+        <p className="author">- AUSTION, 16, former child miner</p>
       </div>
     </div>
   )
