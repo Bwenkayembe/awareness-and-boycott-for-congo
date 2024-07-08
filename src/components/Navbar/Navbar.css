@@ -1,0 +1,25 @@
+nav{
+    width: 100%;
+    /*background: #2D2081;*/
+    color:#5E99DD;
+    padding: 4px 0; /* 4 px from top bottom, left right 0 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10; /* z-index is used to stack elements on top of each other */
+
+}
+
+.logo{
+    width: 180px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px; /* 5 px from top bottom, 20 px from left right */
+    font-size: 20px;
+}

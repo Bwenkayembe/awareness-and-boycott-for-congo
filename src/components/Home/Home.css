@@ -1,0 +1,45 @@
+.MainHome {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between content and image */
+    /* Remove background image from MainHome */
+    /* background: linear-gradient(rgba(3, 2, 13, 0.7), rgba(3, 2, 13, 0.7)), url('../../assets/images/2ndhomepageimage.webp') no-repeat center center; */
+    /* background-size: cover; */
+}
+
+.Home img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    border: 3px solid #5E99DD; /* Blue border for the image */
+}
+
+.Home {
+    flex-basis: 40%; /* Adjust this value as needed */
+}
+
+.Content {
+    flex-basis: 60%; /* Adjust this value as needed */
+    padding-right: 20px; /* Add some padding to separate the content from the image */
+}
+
+/* Font and color styles */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px; /* Adjusted font size for "WHAT IS" */
+    color: #5E99DD; /* Blue color for "WHAT IS" */
+}
+
+.font-libre {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 48px; /* Adjusted font size for "AWARENESS & BOYCOTT FOR CONGO?" */
+    color: #F44A4A; /* Red color for "AWARENESS & BOYCOTT FOR CONGO?" */
+}
+
+.paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; /* Adjusted font size for the paragraph */
+    color: #5E99DD; /* Blue color for the paragraph */
+}

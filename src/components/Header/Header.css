@@ -1,0 +1,40 @@
+.header {
+    width: 100%; /* Ensure the header spans the full width of the viewport */
+    min-height: 100vh; /* Set the minimum height to the full height of the viewport */
+    background: linear-gradient(rgba(3, 2, 13, 0.7), rgba(3, 2, 13, 0.7)), /* Add a dark overlay for better text visibility */
+                url('../../assets/images/USETHISFRLFRL.png') no-repeat center center; /* Set the background image and position it in the center */
+    background-size: cover; /* Scale the background image to cover the entire header area */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white for better contrast */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    flex-direction: column; /* Stack the elements vertically */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.header-text {
+    text-align: center; /* Center align the text */
+    max-width: 800px; /* Limit the maximum width of the text container */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.header-text h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px; /* Set a reasonable font size for the main heading */
+    font-weight: 600; /* Make the font bold */
+    margin: 0; /* Remove default margin */
+    background: linear-gradient(to right, #5E99DD, #F44A4A); /* Gradient colors */
+    background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent to show gradient */
+}
+
+.header-text p {
+    font-size: 15px; /* Set a reasonable font size for the paragraph */
+    margin: 10px auto 20px; /* Add margin for spacing between elements */
+    line-height: 1.4; /* Set line height for better readability */
+    background: #D6DFEE; /* Set background color for better contrast */
+    background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent to show gradient */
+}
