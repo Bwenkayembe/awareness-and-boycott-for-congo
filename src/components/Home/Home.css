@@ -1,12 +1,13 @@
+body {
+    background-color: #d0d8e1; /* Light blue background color for the body */
+}
+
 .MainHome {
     margin: 80px auto;
     width: 90%;
     display: flex;
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Space between content and image */
-    /* Remove background image from MainHome */
-    /* background: linear-gradient(rgba(3, 2, 13, 0.7), rgba(3, 2, 13, 0.7)), url('../../assets/images/2ndhomepageimage.webp') no-repeat center center; */
-    /* background-size: cover; */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .Home img {
@@ -22,24 +23,162 @@
 
 .Content {
     flex-basis: 60%; /* Adjust this value as needed */
-    padding-right: 20px; /* Add some padding to separate the content from the image */
+    padding-right: 20px;
 }
 
-/* Font and color styles */
 .font-poppins {
     font-family: 'Poppins', sans-serif;
-    font-size: 48px; /* Adjusted font size for "WHAT IS" */
-    color: #5E99DD; /* Blue color for "WHAT IS" */
+    font-size: 48px;
+    color: #5E99DD;
 }
 
 .font-libre {
     font-family: 'Libre Baskerville', serif;
-    font-size: 48px; /* Adjusted font size for "AWARENESS & BOYCOTT FOR CONGO?" */
-    color: #F44A4A; /* Red color for "AWARENESS & BOYCOTT FOR CONGO?" */
+    font-size: 48px;
+    color: #F44A4A;
 }
 
 .paragraph {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px; /* Adjusted font size for the paragraph */
-    color: #5E99DD; /* Blue color for the paragraph */
+    font-size: 20px;
+    color: #5E99DD;
+    margin-bottom: 20px;
+}
+
+.paragraph strong {
+    color: #F44A4A;
+    font-weight: bold;
+}
+
+.QuoteSection {
+    display: flex;
+    flex-direction: column; /* Stacks Quote and FunFactContainer vertically */
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.Quote, .FunFactContainer {
+    width: 100%; /* Ensures both sections take full width */
+}
+
+.Quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.testimonial {
+    color: #2D2081;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #F44A4A;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #2D2081;
+    margin-top: 20px;
+}
+
+.FunFactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.FunFact {
+    width: 70%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.donate-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #F44A4A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #d0d8e1;
+    border: none;
+    padding: 20px 40px; /* Increased padding for a bigger button */
+    border-radius: 10px; /* Increased border radius for a more rounded look */
+    font-size: 20px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.25s; /* Added color transition */
+    border: 3px solid #5E99DD;
+    word-spacing: 1em;
+    overflow: hidden;
+}
+
+.donate-button:hover {
+    background-color: #5E99DD;
+    color: #d0d8e1; /* Ensure the text color changes smoothly */
+}
+
+.donate-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.5s ease;
+}
+
+.donate-button:hover::before {
+    border-color: yellow; /* Change border color to yellow */
+    animation: border-animation 1.5s ease infinite;
+}
+
+@keyframes border-animation {
+    0% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    25% {
+        border-top-color: yellow;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50% {
+        border-top-color: yellow;
+        border-right-color: yellow;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    75% {
+        border-top-color: yellow;
+        border-right-color: yellow;
+        border-bottom-color: yellow;
+        border-left-color: transparent;
+    }
+    100% {
+        border-top-color: yellow;
+        border-right-color: yellow;
+        border-bottom-color: yellow;
+        border-left-color: yellow;
+    }
 }
