@@ -29,6 +29,8 @@ const Navbar = () => {
                 return '#dee2e6';
             case '/more':
                 return '#ced4da';
+            case '/action':
+                return '#2D2081'; // Action page color
             default:
                 return '#fff';
         }

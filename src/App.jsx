@@ -8,6 +8,7 @@ import Awareness from './pages/Awareness/Awareness';
 import Boycott from './pages/Boycott/Boycott';
 import Donations from './pages/Donations/Donations';
 import More from './pages/More/More';
+import Action from './pages/Action/Action';
 import Title from './components/Title/Title';
 import ContactUs from './components/ContactUs/contact';
 import Footer from './components/Footer/Footer';
@@ -31,6 +32,8 @@ const App = () => {
           <Route path="/boycott" component={Boycott} />
           <Route path="/donations" component={Donations} />
           <Route path="/more" component={More} />
+          <Route path="/action" component={Action} />
+
         </Switch>
       </div>
       <Footer />
