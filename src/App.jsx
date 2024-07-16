@@ -33,7 +33,6 @@ const App = () => {
           <Route path="/donations" component={Donations} />
           <Route path="/more" component={More} />
           <Route path="/action" component={Action} />
-
         </Switch>
       </div>
       <Footer />
