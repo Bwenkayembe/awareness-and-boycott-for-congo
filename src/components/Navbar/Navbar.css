@@ -12,14 +12,17 @@ nav {
     z-index: 10;
 }
 
+
 .logo {
     width: 180px;
 }
+
 
 nav ul {
     display: flex;
     align-items: center;
 }
+
 
 nav ul li, nav ul .btn {
     font-family: 'Poppins', sans-serif;
@@ -28,17 +31,21 @@ nav ul li, nav ul .btn {
     margin: 5px 20px;
     font-size: 20px;
 
+
 }
+
 
 nav ul .btn{
     color: #D2E2F9;
 }
+
 
 .dark-nav {
     background: #2D2081;
     color: #5E99DD;
     transition: background 0.65s;
 }
+
 
 @media (max-width: 1000px) {
     .logo {
@@ -49,9 +56,11 @@ nav ul .btn{
     }
 }
 
+
 .menu_icon {
     display: none;
 }
+
 
 @media (max-width: 840px) {
     nav {

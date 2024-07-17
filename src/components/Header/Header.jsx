@@ -15,7 +15,6 @@ const Header = () => {
           </Link>
         </button>
       </div>
-      {/* Header content */}
     </div>
   );
 }
