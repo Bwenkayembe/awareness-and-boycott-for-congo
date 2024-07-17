@@ -1,6 +1,7 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './index.css'; // Ensure this import if using index.css for global styles
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -11,30 +12,30 @@ import Awareness from './pages/Awareness/Awareness';
 import Boycott from './pages/Boycott/Boycott';
 import Donations from './pages/Donations/Donations';
 import More from './pages/More/More';
-import {Route, Routes} from 'react-router-dom';
+import Action from './pages/Action/Action'; // Ensure you import Action component
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
+    <Router>
+      <Navbar />
+      <Header />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/awareness' element={<Awareness/>}/>
-        <Route path='/donations' element={<Donations/>}/>
-        <Route path='/action' element={<Action/>}/>
-        <Route path='/more' element={<More/>}/>
-        <Route path='/boycott' element={<Boycott/>}/>
+        <Route exact path="/" element={
+          <div className="container">
+            <Home />
+            <Title subTitle='Contact Us' title='Reach Out to Us, Express your thoughts' />
+            <ContactUs />
+          </div>
+        } />
+        <Route path="/awareness" element={<Awareness />} />
+        <Route path="/boycott" element={<Boycott />} />
+        <Route path="/donations" element={<Donations />} />
+        <Route path="/more" element={<More />} />
+        <Route path="/action" element={<Action />} />
       </Routes>
-      <Header/>
-      <div className="container">
-        <Home/>
-        <Title subTitle='Contact Us' title='Reach Out to Us, Express your thoughts'/>
-        <ContactUs/>
-      </div>
-      <Footer/>
-    </div>
+      <Footer />
+    </Router>
   );
 }
-
 
 export default App;
